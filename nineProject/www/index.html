@@ -40,7 +40,13 @@
             </ion-pane>
         </ion-view>
     </script>
-
+    <script id="help.html" type="text/ng-template">
+        <ion-view title="3SQUARED Help">
+            <ion-content padding="true">
+                <h2 style="font-family:verdana;color:#8A72A3;">Help page</h2>
+            </ion-content>
+        </ion-view>
+    </script>
     <script id="app.html" type="text/ng-template">
         <ion-side-menus>
             <ion-side-menu-content>
@@ -58,7 +64,11 @@
                     <h1 class="title" style="color:#FFF">MAIN MENU</h1>
                 </ion-header-bar>
                 <ion-content>
-                    <ion-menu ng-controller='MenuController'></ion-menu>
+                    <ion-menu ng-controller='MenuController'>
+                        <div class="list">
+                            <div class="item" ng-repeat="item in data.menu_items"><a ui-sref="{{menu_items_url[item.id]}}">{{item.label}} {{menu_items_url[item.id]}}</a></div>
+                        </div>
+                    </ion-menu>
                 </ion-content>
             </ion-side-menu>
         </ion-side-menus>
@@ -69,11 +79,6 @@
                 <h2 style="font-family:verdana;color:#8A72A3;">Welcome to the 3Squared app portal</h2>
             </ion-content>
         </ion-view>
-    </script>
-    <script id="ionMenu.html" type="text/ng-template">
-        <div class="list">
-            <div class="item" ng-repeat="item in data.menu_items">{{item.label}}</div>
-        </div>
     </script>
 </body>
 </html>
