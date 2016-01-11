@@ -5,6 +5,27 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+    .state('app', {
+      url: "/app",
+      abstract: true,
+      templateUrl: "app.html"
+    })
+    .state('app.home', {
+      url: "/home",
+      views: {
+        'appContent': {
+          templateUrl: "home.html",
+          controller: "HomeController"
+        }
+      }
+    })
+
+  $urlRouterProvider.otherwise("/app/home");
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -21,4 +42,47 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+})
+.controller('AppController', function($scope, $ionicSideMenuDelegate) {
+  $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+})
+.controller("HomeController", function($scope) {
+
+})
+.controller("MenuController", function($scope) {
+
+  $scope.data = {
+    menu_items: []
+  };
+
+  $scope.data.menu_items.push({
+    id: 0,
+    label: "HOME"
+  })
+  $scope.data.menu_items.push({
+    id: 1,
+    label: "MY APPLICATIONS"
+  })
+  $scope.data.menu_items.push({
+    id: 2,
+    label: "HELP"
+  })
+  $scope.data.menu_items.push({
+    id: 3,
+    label: "LOG OUT"
+  })
+  $scope.data.menu_items.push({
+	  id: 4,
+	  label: "CONTACT"
+  })
+
+})
+
+.directive("ionMenu", function() {
+  return {
+    restrict: "E",
+    templateUrl: "ionMenu.html"
+  }
 })
