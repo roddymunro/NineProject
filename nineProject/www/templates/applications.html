@@ -1,5 +1,13 @@
-﻿<ion-view title="Your Applications">
-    <ion-content>
+﻿<style>
+     img {
+        border: 1px solid;
+        border-color: #262118;
+        background-color: transparent;
+        border-radius: 15px;
+      }
+</style>
+<ion-view title="Your Applications">
+    <ion-content padding="true">
         <ion-list>
             <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
                 <a class="item item-thumbnail-left" href="" ng-click="openWindow('{{item.name}}')">
