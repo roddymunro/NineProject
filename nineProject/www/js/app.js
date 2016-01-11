@@ -7,7 +7,11 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
+    $stateProvider
+    .state('login', {
+        url: "/login",
+        templateUrl: "login.html"
+    })
     .state('app', {
       url: "/app",
       abstract: true,
@@ -23,7 +27,7 @@ angular.module('starter', ['ionic'])
       }
     })
 
-  $urlRouterProvider.otherwise("/app/home");
+  $urlRouterProvider.otherwise("/login");
 })
 
 .run(function($ionicPlatform) {
