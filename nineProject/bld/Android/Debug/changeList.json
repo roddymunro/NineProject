@@ -136,13 +136,19 @@
     "www\\js\\jquery-2.2.0.min.js",
     "www\\templates\\appInfo.html",
     "www\\js\\app.js~RF7c39c7.TMP",
-    "www\\js\\app.js~RF7ebe42.TMP"
+    "www\\js\\app.js~RF7ebe42.TMP",
+    "www\\js\\ApplicationController.js",
+    "www\\js\\AppInfoController.js",
+    "www\\js\\MenuController.js",
+    "www\\js\\HomeController.js",
+    "www\\js\\HelpController.js",
+    "www\\js\\LoginController.js"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\templates\\app.html"
+    "www\\js\\LoginController.js"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
