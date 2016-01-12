@@ -9,6 +9,7 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
             console.log("Before");
             $.getJSON('http://www.craftiii4.co.uk/3squared/api.php', function (data) {
                 $scope.items = data.result;
+                
                 console.log(data);
             });
         });

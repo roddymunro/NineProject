@@ -148,7 +148,8 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\LoginController.js"
+    "www\\js\\LoginController.js",
+    "www\\templates\\login.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
