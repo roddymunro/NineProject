@@ -1,16 +1,15 @@
-﻿<ion-view title="Login">
-        <ion-header-bar class="bar-dark">
-            <h1 class="title">3SQUARED Login</h1>
-        </ion-header-bar>
-        <ion-content scroll="false">
-            <div class="list-inset">
-                <label class="item item-input">
-                    <input ng-model="username" type="text" placeholder="Username" />
-                </label>
-                <label class="item item-input">
-                    <input ng-model="password" type="text" placeholder="Password" />
-                </label>
-                <button block class="button button-positive" style="margin:10px; width:100%;" ui-sref="app.home">Login</button> <!-- When adding actual functionality, change "ui-sref" -->
-            </div>
-        </ion-content>
-</ion-view>
+﻿
+<ion-header-bar class="bar-dark">
+    <h1 class="title">3SQUARED Login</h1>
+</ion-header-bar>
+<ion-content scroll="false">
+    <div class="list-inset">
+        <label class="item item-input">
+            <input ng-model="username" type="text" placeholder="Username" />
+        </label>
+        <label class="item item-input">
+            <input ng-model="password" type="text" placeholder="Password" />
+        </label>
+        <button block class="button button-positive button-block" ui-sref="app.home">Login</button> <!-- When adding actual functionality, change "ui-sref" -->
+    </div>
+</ion-content>

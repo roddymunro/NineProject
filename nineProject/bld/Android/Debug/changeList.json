@@ -133,16 +133,19 @@
     "www\\js\\bootstrap.min.js",
     "www\\css\\bootstrap.min.css.map",
     "www\\css\\bootstrap.min.css",
-    "www\\js\\jquery-2.2.0.min.js"
+    "www\\js\\jquery-2.2.0.min.js",
+    "www\\templates\\appInfo.html",
+    "www\\js\\app.js~RF7c39c7.TMP",
+    "www\\js\\app.js~RF7ebe42.TMP"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
+    "www\\js\\app.js",
+    "www\\js\\app.js~RF7ebe42.TMP",
     "www\\templates\\applications.html",
-    "www\\index.html",
-    "www\\css\\bootstrap.min.css",
-    "www\\js\\jquery-2.2.0.min.js"
+    "www\\templates\\appInfo.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],

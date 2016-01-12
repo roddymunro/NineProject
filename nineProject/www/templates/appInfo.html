@@ -1,0 +1,31 @@
+﻿<ion-view>
+    <ion-nav-bar class="bar-dark">
+        <ion-nav-buttons  side="left">
+            <button class="button" ui-sref="app.applications" ng-click="back()">
+                Back
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-header-bar class="bar-dark">
+        <h1 class="title">App Info</h1> <!-- Needs to be formatted -->
+    </ion-header-bar>
+    <ion-content>
+        <ion-item item="item" style="width:100%; margin-left:0%; margin-right:0%;">
+            <a class="item item-thumbnail-left">
+                <img ng-src="{{ appService.selectedApp.img }}">
+                <h2>{{ appService.selectedApp.name }}</h2>
+                <p><span class="label label-info"> {{ appService.selectedApp.os }} </span></p>
+                <p><span class="label label-warning"> v{{ appService.selectedApp.version }} </span></p>
+            </a>
+            <div class="card" style="white-space:normal;">
+                {{ appService.selectedApp.info }}
+            </div>
+            <br/>
+        </ion-item>
+    </ion-content>
+    <div class="bar bar-footer footer">
+        <!--<button type="button" class="btn btn-success btn-lg btn-block">Download</button>-->
+        <!-- Sort Button out -->
+        <button class="button button-block button-balanced "> Download </button>
+    </div>
+</ion-view>

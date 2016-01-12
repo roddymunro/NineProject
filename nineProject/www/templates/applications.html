@@ -10,7 +10,7 @@
     <ion-content padding="true">
         <ion-list>
             <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
-                <a class="item item-thumbnail-left" href="" ng-click="openWindow('{{item.name}}')">
+                <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
                     <img ng-src="{{ item.img }}">
                     <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
                     <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
