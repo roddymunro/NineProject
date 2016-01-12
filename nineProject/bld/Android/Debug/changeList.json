@@ -131,15 +131,18 @@
     "www\\lib\\ionic\\scss\\_radio.scss",
     "www\\css\\bootstrap-theme.min.css",
     "www\\js\\bootstrap.min.js",
-    "www\\css\\bootstrap.min.css.map"
+    "www\\css\\bootstrap.min.css.map",
+    "www\\css\\bootstrap.min.css",
+    "www\\js\\jquery-2.2.0.min.js"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\bootstrap.min.js",
-    "www\\css\\bootstrap.min.css.map",
-    "www\\index.html"
+    "www\\templates\\applications.html",
+    "www\\index.html",
+    "www\\css\\bootstrap.min.css",
+    "www\\js\\jquery-2.2.0.min.js"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
