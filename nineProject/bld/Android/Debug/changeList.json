@@ -142,10 +142,7 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\app.js",
-    "www\\js\\app.js~RF7ebe42.TMP",
-    "www\\templates\\applications.html",
-    "www\\templates\\appInfo.html"
+    "www\\templates\\app.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
