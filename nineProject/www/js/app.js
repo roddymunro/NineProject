@@ -7,6 +7,7 @@ var myApp = angular.module('starter', ['ionic'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
+
     $stateProvider
     .state('app', {
         url: "/app",
@@ -34,6 +35,15 @@ var myApp = angular.module('starter', ['ionic'])
             'appContent': {
                 templateUrl: "templates/help.html",
                 controller: "HelpController"
+            }
+        }
+    })
+    .state('app.settings', {
+        url: "/settings",
+        views: {
+            'appContent': {
+                templateUrl: "templates/settings.html",
+                controller: "SettingsController"
             }
         }
     })
@@ -71,6 +81,7 @@ var myApp = angular.module('starter', ['ionic'])
         }
     });
 })
+
 .controller('AppController', function ($scope, $ionicSideMenuDelegate) {
     $scope.toggleLeft = function () {
         $ionicSideMenuDelegate.toggleLeft();

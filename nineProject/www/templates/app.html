@@ -16,7 +16,7 @@
         <ion-content>
             <ion-menu ng-controller='MenuController'>
                 <ul class="list" ng-repeat="item in data.menu_items">
-                    <a nav-clear class="item" ui-sref="{{menu_items_url[item.id]}}">{{item.label}}</a>
+                    <a nav-clear class="item" menu-close ui-sref="{{menu_items_url[item.id]}}">{{item.label}}</a>
                 </ul>
             </ion-menu>
         </ion-content>
