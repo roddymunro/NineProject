@@ -3,7 +3,7 @@
     $scope.data = {
         menu_items: []
     };
-    $scope.menu_items_url = ["app.home", "app.applications", "app.help", "contact", "login", "settings"];
+    $scope.menu_items_url = ["app.home", "app.applications", "app.help", "contact", "login", "app.settings"];
     $scope.data.menu_items.push({
         id: 0,
         label: "HOME"

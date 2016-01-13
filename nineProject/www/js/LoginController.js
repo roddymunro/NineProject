@@ -1,12 +1,12 @@
 ﻿myApp.controller("LoginController", function ($scope, $state) {
     $scope.USER = {
-        username: "",
-        password: ""
+        username: "TestUser",
+        password: "testing"
     };
     $(document).ready(function(){
         console.log("xx");
         /*http://mc8.org/fraz/apicall.php?type=GetHeroes */
-        $.getJSON('http://www.craftiii4.co.uk/3squared/api.php', function (data) {
+        $.getJSON('http://3s.alexogden.com:8080/api', function (data) {
             console.log("HELLO?");
             console.log(data);
         });

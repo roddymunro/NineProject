@@ -47,6 +47,17 @@ var myApp = angular.module('starter', ['ionic'])
             }
         }
     })
+    
+    .state('app.settingsChange', {
+        url: '/settings/:settingsId',
+        views: {
+            'tab-settings': {
+                templateUrl: 'templates/settingsChange.html',
+                controller: 'SettingsChangeController'
+            }
+        }
+    })
+
     .state('app.applications', {
         url: "/applications",
         views: {

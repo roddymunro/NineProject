@@ -1,0 +1,15 @@
+﻿<ion-view view-title="Change {{setting.name}}">
+    <ion-content padding="true">
+        <p>{{setting.description}}</p>
+        <label class="item item-input">
+            <p><input type="{{setting.type}}" placeholder="Enter a new {{setting.name}}" ng-model="data.value1"></p>
+        </label>
+        <label class="item item-input" ng-hide="setting.disable_confirm">
+            <p><input type="{{setting.type}}" placeholder="Confirm the {{setting.name}}" ng-model="data.value2"></p>
+        </label>
+        <button class="button button-block button-positive" ng-click="submit(data.value1)">
+            Confirm
+        </button>
+        <p></p>
+    </ion-content>
+</ion-view>

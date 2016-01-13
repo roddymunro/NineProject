@@ -12,13 +12,17 @@
     <ion-content>
         <ion-item item="item" style="width:100%; margin-left:0%; margin-right:0%;">
             <a class="item item-thumbnail-left">
-                <img ng-src="{{ appService.selectedApp.image }}">
-                <h2>{{ appService.selectedApp.name }}</h2>
+                <img ng-src="{{ appService.selectedApp.icon }}">
+                <h2>{{ appService.selectedApp.title }}</h2>
                 <p><span class="label label-info"> {{ appService.selectedApp.os }} </span></p>
                 <p><span class="label label-warning"> v{{ appService.selectedApp.version }} </span></p>
+                <p><span id="beta" class="label label-info" style="background-color:limegreen"> {{ appService.selectedApp.beta }} </span></p>
+               
+                
+                
             </a>
             <div class="card" style="white-space:normal;">
-                {{ appService.selectedApp.info }}
+                {{ appService.selectedApp.desc }}
             </div>
             <br/>
         </ion-item>
