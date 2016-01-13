@@ -1,12 +1,12 @@
 ﻿<ion-view title="3SQUARED Settings">
     <ion-content padding="true">
         <h2 style="font-family:verdana;color:#8A72A3;">Settings page</h2>
-        <ion-list>
+        <ion-list ng-controller="SettingsController">
             <ion-toggle ng-model="settings.enableNote" onclick="$ionicPopup">
                 <h3>Notifications</h3>
             </ion-toggle>
-            <ion-item class="item-remove-animate item-icon-right" ng-repeat="setting in displaySett" type="item-text-wrap" href="#/tab/settings/{{setting.id}}">
-                <h3>Change {{setting.name}}</h3>
+            <ion-item class="item-remove-animate item-icon-right" ng-repeat="item in setting.items" type="item-text-wrap" href="#/tab/settings/{{item.id}}">
+                <h3>Change {{item.name}}</h3>
                 <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
         </ion-list>

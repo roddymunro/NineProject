@@ -3,4 +3,7 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\Roddy\AppData\Local\Temp\nqorov1f_nineProject_refcache</ReferenceCachePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|iOS'">
+    <DebuggerFlavor>RippleiPhone5</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

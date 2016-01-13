@@ -94,7 +94,6 @@
     "plugins\\cordova-plugin-device\\src\\ubuntu\\device.h",
     "packages\\Bower.1.3.11\\tools\\uninstall.ps1",
     "plugins\\cordova-plugin-device\\src\\ubuntu\\device.js",
-    "www\\templates\\settingsChange.html",
     "www\\lib\\ionic\\js\\angular-ui\\angular-ui-router.js",
     "resources\\ios\\splash\\Default-Landscape@2x~ipad.png",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\.cproject",
@@ -395,14 +394,17 @@
     "plugins\\cordova-plugin-statusbar\\doc\\it\\index.md",
     "www\\lib\\ionic\\scss\\_radio.scss",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\public\\json_internalmap.inl",
-    "plugins\\cordova-plugin-splashscreen\\plugin.xml"
+    "plugins\\cordova-plugin-splashscreen\\plugin.xml",
+    "www\\js\\menucontroller.js",
+    "www\\templates\\settingsChange.html",
+    "www\\js\\applicationcontroller.js"
   ],
-  "deletedFilesIos": [],
+  "deletedFilesIos": [
+    "www\\templates\\settings - Copy.html"
+  ],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [
-    "www\\js\\SettingsController.js"
-  ],
+  "changedFiles": [],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []

@@ -26,3 +26,27 @@
         
     }
 })
+    /* --------------FRASER DO ME!!!_---------------
+    $scope.login = function() {
+        console.log("func");
+        if (localStorage.getItem("token") == null) {
+            console.log("In here");
+            var creds = {
+                "username": document.getElementById("inputUsername").value,
+                "passwd": document.getElementById("inputPassword").value
+            };
+            $.post("http://3s.alexogden.com:8080/api/authenticate", creds, function (result) {
+                console.log(result);
+                if (result.error == 0) {
+                    localStorage.setItem("token", result.token);
+                    console.log(localStorage.getItem("token"));
+                }
+            });
+        }
+        else {
+            console.log("Else");
+            console.log(localStorage.getItem("token"));
+            //check token still valid
+            window.location.replace("app.home");
+        }
+    }*/
