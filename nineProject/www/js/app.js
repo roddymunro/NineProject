@@ -29,12 +29,12 @@ var myApp = angular.module('starter', ['ionic'])
             }
         }
     })
-    .state('app.help', {
-        url: "/help",
+    .state('app.report', {
+        url: "/report",
         views: {
             'appContent': {
-                templateUrl: "templates/help.html",
-                controller: "HelpController"
+                templateUrl: "templates/reportBugs.html",
+                controller: "ReportBugsController"
             }
         }
     })
@@ -47,16 +47,26 @@ var myApp = angular.module('starter', ['ionic'])
             }
         }
     })
-    
-    .state('app.settingsChange', {
-        url: '/settings/:settingsId',
+
+    .state('app.email', {
+        url: '/settings/email',
         views: {
-            'tab-settings': {
-                templateUrl: 'templates/settingsChange.html',
-                controller: 'SettingsChangeController'
+            'appContent': {
+                templateUrl: "templates/changeEmail.html",
+                controller: "EmailChangeController"
             }
         }
     })
+
+      .state('app.password', {
+          url: '/settings/password',
+          views: {
+              'appContent': {
+                  templateUrl: "templates/changePassword.html",
+                  controller: "PasswordChangeController"
+              }
+          }
+      })
 
     .state('app.applications', {
         url: "/applications",

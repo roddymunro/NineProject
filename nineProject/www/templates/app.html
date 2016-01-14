@@ -1,24 +1,24 @@
 ﻿<ion-side-menus>
-    <ion-side-menu-content>
-        <ion-nav-bar class="bar-dark">
-            <ion-nav-buttons side="left">
-                <button class="button" ng-click="toggleLeft()">
-                    Menu
-                </button>
-            </ion-nav-buttons>
-        </ion-nav-bar>
-        <ion-nav-view name="appContent"></ion-nav-view>
-    </ion-side-menu-content>
-    <ion-side-menu side="left">
-        <ion-header-bar  class="bar bar-header bar-assertive" style="background-color:#3B1365">
-            <h1 class="title" style="color:#FFF">MAIN MENU</h1>
-        </ion-header-bar>
-        <ion-content>
-            <ion-menu ng-controller='MenuController'>
-                <ul class="list" ng-repeat="item in data.menu_items">
-                    <a nav-clear class="item" menu-close ui-sref="{{menu_items_url[item.id]}}">{{item.label}}</a>
-                </ul>
-            </ion-menu>
-        </ion-content>
-    </ion-side-menu>
-</ion-side-menus>
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-dark">
+                <ion-nav-buttons side="left">
+                    <button class="button" ng-click="toggleLeft()" style="background-color:#D6D7D8">
+                        <img class="menuBtn" src="img/menuBtn.png" style="background-color:#D6D7D8;max-height:60%;max-width:60%" />
+                    </button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view name="appContent"></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left">
+            <ion-header-bar class="bar bar-header bar-assertive" style="background-color:#3B1365">
+                <h1 class="title" style="color:#FFF">MAIN MENU</h1>
+            </ion-header-bar>
+            <ion-content>
+                <ion-menu ng-controller='MenuController'>
+                    <ul class="list" ng-repeat="item in data.menu_items">
+                        <a nav-clear class="item" menu-close ui-sref="{{menu_items_url[item.id]}}">{{item.label}}</a>
+                    </ul>
+                </ion-menu>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>

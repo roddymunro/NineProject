@@ -23,6 +23,7 @@
     "plugins\\cordova-plugin-splashscreen\\tests\\ios\\doc\\it\\README.md",
     "plugins\\cordova-plugin-statusbar\\doc\\it\\README.md",
     "www\\lib\\ionic\\css\\ionic.min.css",
+    "www\\img\\3squared-logo.png",
     "plugins\\cordova-plugin-console\\doc\\ja\\README.md",
     "www\\lib\\ionic\\scss\\_slides.scss",
     "plugins\\ionic-plugin-keyboard\\src\\android\\IonicKeyboard.java",
@@ -94,7 +95,6 @@
     "plugins\\cordova-plugin-device\\src\\ubuntu\\device.h",
     "packages\\Bower.1.3.11\\tools\\uninstall.ps1",
     "plugins\\cordova-plugin-device\\src\\ubuntu\\device.js",
-    "www\\templates\\settingsChange.html",
     "www\\lib\\ionic\\js\\angular-ui\\angular-ui-router.js",
     "resources\\ios\\splash\\Default-Landscape@2x~ipad.png",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\.cproject",
@@ -118,7 +118,6 @@
     "plugins\\cordova-plugin-splashscreen\\tests\\ios\\doc\\ko\\README.md",
     "plugins\\cordova-plugin-statusbar\\src\\browser\\statusbar.js",
     "plugins\\cordova-plugin-splashscreen\\tests\\ios\\doc\\fr\\README.md",
-    "www\\js\\HelpController.js",
     "packages\\Bower.1.3.11\\readme.txt",
     "plugins\\cordova-plugin-device\\doc\\pl\\index.md",
     "plugins\\cordova-plugin-splashscreen\\doc\\es\\README.md",
@@ -333,7 +332,6 @@
     "www\\js\\HomeController.js",
     "plugins\\cordova-plugin-splashscreen\\doc\\fr\\index.md",
     "packages\\NoGit.0.0.8\\readme.txt",
-    "www\\templates\\help.html",
     ".editorconfig",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\device\\public\\json_value.o",
     "plugins\\cordova-plugin-splashscreen\\src\\ios\\CDVViewController+SplashScreen.h",
@@ -396,18 +394,37 @@
     "www\\lib\\ionic\\scss\\_radio.scss",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\public\\json_internalmap.inl",
     "plugins\\cordova-plugin-splashscreen\\plugin.xml",
-    "www\\img\\3squared-logo.png",
-    "www\\js\\SettingsChangeController.js",
-    "www\\js\\settingscontroller.js"
+    "www\\img\\menuBtn.png",
+    "www\\templates\\appinfo.html",
+    "www\\templates\\reportBugs.html",
+    "www\\js\\ReportBugsController.js",
+    "www\\templates\\changeEmail.html",
+    "www\\templates\\changePassword.html",
+    "www\\js\\PasswordChangeController.js",
+    "www\\js\\EmailChangeController.js"
   ],
-  "deletedFilesIos": [],
+  "deletedFilesIos": [
+    "www\\templates\\help.html",
+    "www\\js\\HelpController.js",
+    "www\\templates\\settingsChange.html",
+    "www\\js\\SettingsChangeController.js"
+  ],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\ApplicationController.js",
-    "www\\templates\\login.html"
+    "www\\js\\app.js",
+    "www\\templates\\changeEmail.html",
+    "www\\templates\\changePassword.html",
+    "www\\templates\\settings.html",
+    "www\\js\\PasswordChangeController.js",
+    "www\\js\\EmailChangeController.js",
+    "www\\js\\SettingsController.js",
+    "www\\index.html"
   ],
-  "deletedFiles": [],
+  "deletedFiles": [
+    "www\\templates\\settingsChange.html",
+    "www\\js\\SettingsChangeController.js"
+  ],
   "addedPlugins": [],
   "deletedPlugins": []
 }

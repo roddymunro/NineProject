@@ -3,7 +3,7 @@
     $scope.data = {
         menu_items: []
     };
-    $scope.menu_items_url = ["app.home", "app.applications", "app.help", "contact", "login", "app.settings"];
+    $scope.menu_items_url = ["app.home", "app.applications", "app.report", "app.settings", "login"];
     $scope.data.menu_items.push({
         id: 0,
         label: "HOME"
@@ -14,19 +14,15 @@
     })
     $scope.data.menu_items.push({
         id: 2,
-        label: "HELP"
+        label: "REPORT BUGS"
     })
     $scope.data.menu_items.push({
         id: 3,
-        label: "CONTACT"
+        label: "SETTINGS"
     })
     $scope.data.menu_items.push({
         id: 4,
         label: "LOG OUT"
-    })
-    $scope.data.menu_items.push({
-        id: 5,
-        label: "SETTINGS"
     })
 
 })
