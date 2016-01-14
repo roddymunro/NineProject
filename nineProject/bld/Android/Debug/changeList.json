@@ -401,7 +401,8 @@
     "www\\templates\\changeEmail.html",
     "www\\templates\\changePassword.html",
     "www\\js\\PasswordChangeController.js",
-    "www\\js\\EmailChangeController.js"
+    "www\\js\\EmailChangeController.js",
+    "www\\css\\AvenirLTStd-Book.otf"
   ],
   "deletedFilesIos": [
     "www\\templates\\help.html",
@@ -412,19 +413,10 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\app.js",
     "www\\templates\\changeEmail.html",
-    "www\\templates\\changePassword.html",
-    "www\\templates\\settings.html",
-    "www\\js\\PasswordChangeController.js",
-    "www\\js\\EmailChangeController.js",
-    "www\\js\\SettingsController.js",
-    "www\\index.html"
+    "www\\templates\\changePassword.html"
   ],
-  "deletedFiles": [
-    "www\\templates\\settingsChange.html",
-    "www\\js\\SettingsChangeController.js"
-  ],
+  "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
 }

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: appFont;
+    src: url(AvenirLTStd-Book.otf);
+}
+
+h2 {
+    font-family:appFont;
+    color:#3B1365;
+    font-size:30px;
+}
+
+h3 {
+    font-family:appFont;
+    color:#8A72A3;
+    font-size:21px;
+}
+
+h4 {
+    font-family:appFont;
+    color:#D6D7D8;
+    font-size:14px;
+}
+
+appImg {
+        border: 1px solid;
+        border-color: #262118;
+        background-color: transparent;
+        border-radius: 15px;
+}
+
