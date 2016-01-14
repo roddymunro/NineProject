@@ -46,7 +46,7 @@
             console.log("Else");
             console.log(localStorage.getItem("token"));
             //check token still valid
-            window.location.replace("app.home");
+            $state.go("app.home");
         }
     }
 })
