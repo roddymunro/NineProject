@@ -1,4 +1,4 @@
-﻿<ion-view title="3SQUARED Settings">
+﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:50%;max-width:auto" align="middle" />'>
     <ion-content padding="true">
         <h2 style="font-family:verdana;color:#8A72A3;">Settings page</h2>
         <ion-list ng-controller="SettingsController">
@@ -7,6 +7,7 @@
             </ion-toggle>
             <ion-item class="item-remove-animate item-icon-right" ng-repeat="item in setting.items" type="item-text-wrap" href="#/tab/settings/{{item.id}}">
                 <h3>Change {{item.name}}</h3>
+                <a href="settings.html">settings.html</a>
                 <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
         </ion-list>

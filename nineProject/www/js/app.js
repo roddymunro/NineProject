@@ -90,8 +90,16 @@ var myApp = angular.module('starter', ['ionic'])
         if (window.StatusBar) {
             StatusBar.styleDefault();
         }
-    });
-})
+        
+                var push = new Ionic.Push({
+                    "debug": true
+                });
+
+                push.register(function(token) {
+                    console.log("Device token:",token.token);
+                });
+            });
+        })
 
 .controller('AppController', function ($scope, $ionicSideMenuDelegate) {
     $scope.toggleLeft = function () {

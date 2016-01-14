@@ -10,7 +10,7 @@
         disable_confirm: true
     })
     $scope.setting.items.push({
-        id: 0,
+        id: 1,
         name: 'Password',
         type: 'password',
         disable_confirm: true

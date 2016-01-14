@@ -395,14 +395,15 @@
     "plugins\\cordova-plugin-statusbar\\doc\\it\\index.md",
     "www\\lib\\ionic\\scss\\_radio.scss",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\public\\json_internalmap.inl",
-    "plugins\\cordova-plugin-splashscreen\\plugin.xml"
+    "plugins\\cordova-plugin-splashscreen\\plugin.xml",
+    "www\\img\\3squared-logo.png",
+    "www\\js\\SettingsChangeController.js",
+    "www\\js\\settingscontroller.js"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [
-    "www\\js\\SettingsController.js"
-  ],
+  "changedFiles": [],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
