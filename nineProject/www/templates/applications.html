@@ -10,7 +10,7 @@
         }
     </style>
         <ion-content padding="true">
-            <h2>My Applications</h2>
+            <!--<h2>My Applications</h2>-->
             <ion-list>
                 <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
                     <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
@@ -20,11 +20,11 @@
                             <!--<span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ item.beta }} </span>-->
                         </h2>
                         <p>{{ item.description }}</p>
-                        <br />
-                        <p>
+                        <!--<br />-->
+                        <!--<p>
                             <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
                             <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
-                        </p>
+                        </p>-->
                         
                     </a>
                 </ion-item>
