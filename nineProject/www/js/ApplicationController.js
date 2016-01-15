@@ -4,6 +4,7 @@ myApp.service('appService', function () {
 })
 myApp.controller("ApplicationsController", function ($scope, appService) {
     $scope.items;
+    $scope.callcomplete;
     $scope.getApps = function () {
         $(function () {
             console.log("Before");
@@ -12,8 +13,8 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                 url: myURL,
                 type: 'GET',
                 dataType: 'json',
-                success: function (data) { console.log(data); $scope.items = data.Apps; },
-                error: function () { alert("ERROR"); },
+                success: function (data) { console.log(data); $scope.items = data.Apps; $scope.callcomplete = "success";},
+                error: function () { $scope.callcomplete = "error"; },
                 beforeSend: setHeader,
                 complete: function () {
                     console.log("COMPLETE");
