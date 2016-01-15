@@ -12,6 +12,7 @@
         <ion-content padding="true">
             <h2>My Applications</h2>
                {{ callcomplete }}
+                {{ items[0].title }}
             <ion-list>
                 <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
                     <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
@@ -26,7 +27,6 @@
                             <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
                             <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
                         </p>
-                        
                     </a>
                 </ion-item>
             </ion-list>

@@ -181,37 +181,10 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\js\\LoginController.js",
-    "config.xml",
-    "www\\index.html",
-    "www\\css\\style.css",
-    "www\\templates\\app.html",
-    "www\\templates\\appInfo.html",
-    "www\\templates\\applications.html",
-    "www\\templates\\home.html",
-    "www\\templates\\login.html",
-    "www\\templates\\settings.html",
-    "www\\js\\AppInfoController.js",
     "www\\js\\ApplicationController.js",
-    "www\\js\\HomeController.js",
-    "www\\js\\MenuController.js",
-    "www\\js\\SettingsController.js",
-    "www\\js\\app.js",
-    "www\\lib\\ionic\\css\\ionic.css",
-    "www\\js\\PasswordChangeController.js",
-    "www\\img\\3squared-logo.png",
-    "www\\css\\AvenirLTStd-Book.otf",
-    "www\\js\\EmailChangeController.js",
-    "www\\img\\menuBtn.png",
-    "www\\templates\\changeEmail.html",
-    "www\\templates\\reportBugs.html",
-    "www\\js\\ReportBugsController.js",
-    "www\\templates\\changePassword.html"
+    "www\\templates\\applications.html"
   ],
-  "deletedFiles": [
-    "www\\js\\HelpController.js",
-    "www\\templates\\help.html"
-  ],
+  "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
 }

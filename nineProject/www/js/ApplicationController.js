@@ -4,7 +4,7 @@ myApp.service('appService', function () {
 })
 myApp.controller("ApplicationsController", function ($scope, appService) {
     $scope.items;
-    $scope.callcomplete;
+    $scope.callcomplete = "notDone";
     $scope.getApps = function () {
         $(function () {
             console.log("Before");
@@ -17,7 +17,7 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                 error: function () { $scope.callcomplete = "error"; },
                 beforeSend: setHeader,
                 complete: function () {
-                    console.log("COMPLETE");
+                    console.log("COMPLETE");/*
                     for (var i = 0; i < $scope.items.length; i++) {
                         switch ($scope.items[i].os) {
                             case 0: $scope.items[i].os = "Android"
@@ -33,7 +33,7 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                             case 1: $scope.items[i].beta = "B"
                                 break;
                         }
-                    }
+                    }*/
                     $scope.$apply();
                 }
             });
