@@ -39,6 +39,7 @@
                 if (result.error == 0) {
                     localStorage.setItem("token", result.token);
                     console.log(localStorage.getItem("token"));
+                    $state.go("app.home");
                 }
             });
         }
