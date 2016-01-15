@@ -163,7 +163,6 @@
     "plugins\\fetch.json",
     "plugins\\cordova-plugin-statusbar\\doc\\es\\index.md",
     "resources\\ios\\icon\\icon-small@3x.png",
-    "config.xml",
     "plugins\\cordova-plugin-statusbar\\doc\\ja\\README.md",
     "www\\lib\\ionic\\js\\angular\\angular.js",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\device\\public\\json_writer.o",
@@ -386,7 +385,8 @@
     "www\\templates\\appinfo.html",
     "www\\templates\\changeemail.html",
     "www\\templates\\reportbugs.html",
-    "www\\css\\AvenirLTStd-Book.otf"
+    "www\\css\\AvenirLTStd-Book.otf",
+    "config.xml"
   ],
   "deletedFilesIos": [
     "packages\\Bower.1.3.11\\content\\.bin\\bower.cmd",
@@ -411,9 +411,6 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\templates\\login.html",
-    "www\\css\\style.css",
-    "www\\templates\\reportbugs.html",
     "www\\templates\\applications.html"
   ],
   "deletedFiles": [],

@@ -27,9 +27,9 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                                 break;
                         }
                         switch ($scope.items[i].beta) {
-                            case 0: $scope.items[i].beta = "NEW"
+                            case 0: $scope.items[i].beta = ""
                                 break;
-                            case 1: $scope.items[i].beta = "BETA"
+                            case 1: $scope.items[i].beta = "B"
                                 break;
                         }
                     }

@@ -30,6 +30,7 @@ appImg {
 }
 
 img.navTitle {
+    margin:0 auto;
     margin-top: 8px;
     height: 27px;
     display:block;

@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 <ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>
-    =======
     ﻿
     <style>
         .appImg {
@@ -10,8 +9,6 @@
             border-radius: 15px;
         }
     </style>
-    <ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:60%;max-width:auto" align="middle" />'>
-        >>>>>>> origin/master
         <ion-content padding="true">
             <h2>My Applications</h2>
             <ion-list>
@@ -20,13 +17,15 @@
                         <img class="appImg" ng-src="{{item.icon}}">
                         <h2>
                             {{ item.title }}
-                            <span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ item.beta }} </span>
+                            <!--<span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ item.beta }} </span>-->
                         </h2>
                         <p>{{ item.description }}</p>
+                        <br />
                         <p>
                             <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
                             <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
                         </p>
+                        
                     </a>
                 </ion-item>
             </ion-list>
