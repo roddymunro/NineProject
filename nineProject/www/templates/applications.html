@@ -1,8 +1,8 @@
 
-<!--<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>-->
+<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>
     ﻿
     <style>
-        img {
+        .appImg {
             border: 1px solid;
             border-color: #262118;
             background-color: transparent;
@@ -10,21 +10,21 @@
         }
     </style>
         <ion-content padding="true">
-            <!--<h2>My Applications</h2>-->
+            <h2>My Applications</h2>
             <ion-list>
                 <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
                     <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
-                        <img ng-src="{{item.icon}}">
+                        <img class="appImg" ng-src="{{item.icon}}">
                         <h2>
                             {{ item.title }}
                             <!--<span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ item.beta }} </span>-->
                         </h2>
                         <p>{{ item.description }}</p>
-                        <!--<br />-->
-                        <!--<p>
+                        <br />
+                        <p>
                             <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
                             <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
-                        </p>-->
+                        </p>
                         
                     </a>
                 </ion-item>

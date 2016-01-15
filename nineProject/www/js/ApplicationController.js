@@ -48,7 +48,7 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
     }
     $(document).ready(function(){
         console.log("ASDASDASDASDSAD");
-        if (localStorage.getItem("token") != null)
+        //if (localStorage.getItem("token") != null)
             $scope.getApps();
         /* else
              $state.go("app.home");*/
