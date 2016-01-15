@@ -4,9 +4,10 @@
 }
 
 h2 {
-    font-family:appFont;
-    color:#3B1365;
-    font-size:30px;
+    font-family: appFont;
+    color: #3B1365;
+    font-size: 30px;
+    text-align: left;
 }
 
 h3 {

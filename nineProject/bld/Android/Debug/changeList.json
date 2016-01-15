@@ -411,7 +411,10 @@
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\templates\\login.html"
+    "www\\templates\\login.html",
+    "www\\css\\style.css",
+    "www\\templates\\reportbugs.html",
+    "www\\templates\\applications.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
