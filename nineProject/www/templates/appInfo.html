@@ -1,22 +1,21 @@
-﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:60%;max-width:autodisplay:block;margin-left:auto;margin-right:auto" />'>
+﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>
     <ion-nav-bar class="bar-dark">
         <ion-nav-buttons side="left">
-            <button class="button" ui-sref="app.applications" ng-click="back()">
+            <button class="button" ui-sref="app.applications" ng-click="back()" style="color:#8A72A3;background-color:#D6D7D8">
                 Back
             </button>
         </ion-nav-buttons>
     </ion-nav-bar>
     <ion-header-bar class="bar-dark">
-        <h1 class="title">App Info</h1> <!-- Needs to be formatted -->
     </ion-header-bar>
     <ion-content>
         <ion-item item="item" style="width:100%; margin-left:0%; margin-right:0%;">
             <a class="item item-thumbnail-left">
                 <img ng-src="{{ appService.selectedApp.icon }}">
                 <h2>{{ appService.selectedApp.title }}</h2>
-                <p><span class="label label-info"> {{ appService.selectedApp.os }} </span></p>
-                <p><span class="label label-warning"> v{{ appService.selectedApp.version }} </span></p>
-                <!--<p><span id="beta" class="label label-info" style="background-color:limegreen"> {{ appService.selectedApp.beta }} </span></p>-->
+                <p><span class="label label-info" style="float:right"> {{ appService.selectedApp.os }} </span></p>
+                <p><span class="label label-warning" style="float:right"> v{{ appService.selectedApp.version }} </span></p>
+                <p><span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ appService.selectedApp.beta }} </span></p>
             </a>
             <div class="card" style="white-space:normal;">
                 {{ appService.selectedApp.description }}

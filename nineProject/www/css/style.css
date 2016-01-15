@@ -28,3 +28,10 @@ appImg {
         border-radius: 15px;
 }
 
+img.navTitle {
+    margin-top: 8px;
+    height: 27px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}

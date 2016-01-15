@@ -48,24 +48,16 @@ var myApp = angular.module('starter', ['ionic'])
         }
     })
 
-    .state('app.email', {
+    .state('email', {
         url: '/settings/email',
-        views: {
-            'appContent': {
                 templateUrl: "templates/changeEmail.html",
                 controller: "EmailChangeController"
-            }
-        }
     })
 
-      .state('app.password', {
+      .state('password', {
           url: '/settings/password',
-          views: {
-              'appContent': {
-                  templateUrl: "templates/changePassword.html",
-                  controller: "PasswordChangeController"
-              }
-          }
+           templateUrl: "templates/changePassword.html",
+           controller: "PasswordChangeController"
       })
 
     .state('app.applications', {

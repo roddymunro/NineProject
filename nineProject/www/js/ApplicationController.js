@@ -18,7 +18,7 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                 complete: function () {
                     console.log("COMPLETE");
                     for (var i = 0; i < $scope.items.length; i++) {
-                        switch (data.Apps[i].os) {
+                        switch ($scope.items[i].os) {
                             case 0: $scope.items[i].os = "Android"
                                 break;
                             case 1: $scope.items[i].os = "iOS"
@@ -26,8 +26,8 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
                             case 2: $scope.items[i].os = "Universal"
                                 break;
                         }
-                        switch (data.Apps[i].beta) {
-                            case 0: $scope.items[i].beta = null
+                        switch ($scope.items[i].beta) {
+                            case 0: $scope.items[i].beta = "NEW"
                                 break;
                             case 1: $scope.items[i].beta = "BETA"
                                 break;

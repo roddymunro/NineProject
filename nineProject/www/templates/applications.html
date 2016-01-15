@@ -1,28 +1,33 @@
 <<<<<<< HEAD
-﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:60%;max-width:auto" align="middle" />'>
-=======
-﻿<style>
-     .appImg {
-        border: 1px solid;
-        border-color: #262118;
-        background-color: transparent;
-        border-radius: 15px;
-      }
-</style>
-<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:60%;max-width:auto" align="middle" />'>
->>>>>>> origin/master
-    <ion-content padding="true">
-        <ion-list>
-            <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
-                <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
-                    <img class="appImg" ng-src="{{item.icon}}">
-                    <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
-                    <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
-                    <h2>{{ item.title }}</h2>
-                    <p>{{ item.description }}</p>
-                    <!--<p><span id="beta" class="label label-info" style="background-color:limegreen"> {{ item.beta }} </span></p>-->
-                </a>
-            </ion-item>
-        </ion-list>
-    </ion-content>
-</ion-view>
+<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>
+    =======
+    ﻿
+    <style>
+        .appImg {
+            border: 1px solid;
+            border-color: #262118;
+            background-color: transparent;
+            border-radius: 15px;
+        }
+    </style>
+    <ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:60%;max-width:auto" align="middle" />'>
+        >>>>>>> origin/master
+        <ion-content padding="true">
+            <ion-list>
+                <ion-item ng-repeat="item in items" item="item" style="width:100%; margin-left:0%; margin-right:0%;">
+                    <a class="item item-thumbnail-left" href="" ng-click="setApp(item)" ui-sref="appInfo">
+                        <img class="appImg" ng-src="{{item.icon}}">
+                        <h2>
+                            {{ item.title }}
+                            <span id="beta" class="label label-info" style="background-color:limegreen;float:right"> {{ item.beta }} </span>
+                        </h2>
+                        <p>{{ item.description }}</p>
+                        <p>
+                            <span class="label label-warning" style="float: right;"> v{{ item.version }} </span>
+                            <span class="label label-info" style="float: right; margin-right:2px;"> {{ item.os }} </span>
+                        </p>
+                    </a>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>

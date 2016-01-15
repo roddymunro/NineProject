@@ -1,4 +1,4 @@
-﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:50%;max-width:auto" align="middle" />'>
+﻿<ion-view title='<img class="navTitle" src="img/3squared-logo.png" style="max-height:80%;max-width:80%" />'>
     <ion-content padding="true">
         <h2>Settings page</h2>
         <ion-list ng-controller="SettingsController">
@@ -6,8 +6,8 @@
                 <h3>Notifications</h3>
             </ion-toggle>
             <ion-item class="item-remove-animate item-icon-right" ng-repeat="item in setting.setting_item" type="item-text-wrap" ui-sref="{{settings_url[item.id]}}">
-              <h3>Change {{item.name}}</h3>
-              <i class="icon ion-chevron-right icon-accessory"></i>
+                <h3>Change {{item.name}}</h3>
+                <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
         </ion-list>
     </ion-content>

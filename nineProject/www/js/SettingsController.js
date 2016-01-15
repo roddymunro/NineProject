@@ -5,7 +5,7 @@
   $scope.settings = {
     enableNote: true
   };
-  $scope.settings_url = ["app.email" , "app.password"];
+  $scope.settings_url = ["email" , "password"];
   $scope.setting.setting_item.push({
     id:0,
     name: 'Email',
