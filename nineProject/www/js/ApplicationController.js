@@ -44,7 +44,8 @@ myApp.controller("ApplicationsController", function ($scope, appService) {
         console.log(item);
     }
     
-    function setHeader(xhr){
+    function setHeader(xhr) {
+        console.log(localStorage.getItem("token"));
         xhr.setRequestHeader('x-access-token',localStorage.getItem("token"));
     }
     $(document).ready(function(){
